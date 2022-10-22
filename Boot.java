@@ -1,5 +1,6 @@
 /*
- * Boot class (template)
+ * Eva Kinnel
+ * Boot class
  * Assignment 5: Bringing it All Together
  * @author R. Jordan Crouser + CSC120 (Fall '22))
  * @version 13 October 2022
@@ -14,13 +15,34 @@ public class Boot {
     }
 
     /*
-     * TODO: Modify this method to print ASCII Art Boot
+     * prints/displays ASCII Art Boots!
      */
     public void display() {
-        if (this.direction.equals("left")) {
-          System.out.println("Left boot?");
-        } else if (this.direction.equals("right")) {
-          System.out.println("Right boot?");
+        if (this.direction.equals("top")) {
+          System.out.println("    |          | |          |");
+          System.out.println("    |          | |          |");
+          System.out.println("    |          | |          |");
+          System.out.println("    |          | |          |");
+          System.out.println("    |__________| |__________|");
+          System.out.println("    \\     X    | |     X    |");
+          System.out.println("     \\    X   /   \\    X    /");
+          System.out.println("     |    X   |   |    X    |");
+          System.out.println("     |    X   |   |    X    |");
+          System.out.println("     |    X   |   |    X    |");
+          System.out.println("     |    X   |   |    X    |");
+          System.out.println("     |    X   |   |    X    |");
+  
+;
+        } else if (this.direction.equals("bottom")) {
+          System.out.println("      \\   X   /    \\   X   /");
+          System.out.println("      \\   X   /    \\   X   /");
+          System.out.println("      |   X  |      |  X  |");
+          System.out.println("     /       |      |      \\");
+          System.out.println("    /        |      |       \\");
+          System.out.println("___/         |      |        \\___");
+          System.out.println("|        |   |      |   |         |");
+          System.out.println("|________A___|      |___A_________|");
+  
         } else {
           System.out.println("Which boot?");
         }
@@ -28,8 +50,8 @@ public class Boot {
 
     /* main method (for testing) */
     public static void main(String[] args) {
-        Boot myLeftBoot = new Boot("left");
-        Boot myRightBoot = new Boot("right");
+        Boot myLeftBoot = new Boot("top");
+        Boot myRightBoot = new Boot("bottom");
         myLeftBoot.display();
         myRightBoot.display();
     }
